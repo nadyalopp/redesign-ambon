@@ -72,22 +72,28 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li>
-              <a href="index.html" class="navbar-link has-after">Home</a>
+              <a href="index.html" class="navbar-link has-after">Beranda</a>
             </li>
             <li>
-              <a href="profil.html" class="navbar-link has-after">Profil</a>
+              <a href="#" class="navbar-link has-after">Profil</a>
             </li>
             <li>
-              <a href="mengenal-ambon.html" class="navbar-link has-after">Mengenal Ambon</a>
+              <a href="#" class="navbar-link has-after">Mengenal Ambon</a>
             </li>
-            <li>
-              <a href="COBA.html" class="navbar-link has-after">Potensi Daerah</a>
+            <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link has-after">Potensi Daerah<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Perdagangan</a></li>
+                <li><a class="dropdown-item" href="#">Perikanan</a></li>
+                <li><a class="dropdown-item" href="artikel-wisata.html">Pariwisata</a></li>
+                <li><a class="dropdown-item" href="#">Sarana Prasarana</a></li>
+              </ul>
             </li>
             <li class="navbar-item dropdown">
               <a href="#" class="navbar-link has-after">Open-Government <i class="fas fa-caret-down"></i></a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Alur Permohonan Informasi</a></li>
-                <li><a class="dropdown-item" href="PPID.html">PPID</a></li>
+                <li><a class="dropdown-item" href="PPID-ERROR.html">PPID</a></li>
                 <li><a class="dropdown-item" href="#">Data Sekolah</a></li>
                 <li><a class="dropdown-item" href="#">Transparansi Anggaran</a></li>
               </ul>
@@ -130,16 +136,31 @@
       </div>
       <ul class="navbar-list">
         <li>
-          <a href="index.html"navbar-link" data-nav-link>Home</a>
+          <a href="index.html"navbar-link" data-nav-link>Beranda</a>
         </li>
         <li>
-          <a href="profil.html" class="navbar-link" data-nav-link>Profil</a>
+          <a href="#" class="navbar-link" data-nav-link>Profil</a>
         </li>
         <li>
-          <a href="mengenal-ambon.html" class="navbar-link" data-nav-link>Mengenal Ambon</a>
+          <a href="#" class="navbar-link" data-nav-link>Mengenal Ambon</a>
         </li>
-        <li>
-          <a href="potensi-daerah.html" class="navbar-link" data-nav-link>Potensi Daerah</a>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link has-after">Potensi Daerah<i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Perdagangan</a></li>
+            <li><a class="dropdown-item" href="#">Perikanan</a></li>
+            <li><a class="dropdown-item" href="artikel-wisata.html">Pariwisata</a></li>
+            <li><a class="dropdown-item" href="#">Sarana Prasarana</a></li>
+          </ul>
+        </li>
+        <li class="navbar-item dropdown">
+          <a href="#" class="navbar-link has-after">Open-Government <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Alur Permohonan Informasi</a></li>
+            <li><a class="dropdown-item" href="PPID-ERROR.html">PPID</a></li>
+            <li><a class="dropdown-item" href="#">Data Sekolah</a></li>
+            <li><a class="dropdown-item" href="#">Transparansi Anggaran</a></li>
+          </ul>
         </li>
         <li class="navbar-item dropdown">
           <a href="#" class="navbar-link has-after">Informasi<i class="fas fa-caret-down"></i></a>
@@ -150,16 +171,25 @@
             <li><a class="dropdown-item" href="#">Kode Pos</a></li>
           </ul>
         </li>
+                    <li class="navbar-item dropdown">
+              <a href="#" class="navbar-link has-after">Open-Government <i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Alur Permohonan Informasi</a></li>
+                <li><a class="dropdown-item" href="PPID-ERROR.html">PPID</a></li>
+                <li><a class="dropdown-item" href="#">Data Sekolah</a></li>
+                <li><a class="dropdown-item" href="#">Transparansi Anggaran</a></li>
+              </ul>
+            </li>
         <li>
           <a href="berita.html" class="navbar-link has-after">Berita</a>
         </li>
         <li class="navbar-item dropdown">
-          <a href="#" class="navbar-link has-after">Hubungi Kami<ion-icon name="chevron-down"></ion-icon></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Kontak</a></li>
-            <li><a class="dropdown-item" href="#">Saran</a></li>
-          </ul>
-        </li>
+          <a href="#" class="navbar-link has-after">Hubungi Kami<i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Kontak</a></li>
+          <li><a class="dropdown-item" href="#">Saran</a></li>
+        </ul>
+      </li>
       </ul>
     </div>
     <div class="overlay" data-nav-toggler data-overlay></div>
@@ -213,24 +243,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama Anda" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Alamat Email Anda" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Keterangan" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Tulis pesan anda disini ..." required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
             </form>
 
           </div>

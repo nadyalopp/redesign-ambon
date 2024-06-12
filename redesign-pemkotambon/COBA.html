@@ -3,51 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak Kami</title>
+  <title>Mobile Navbar dengan Dropdown</title>
   <style>
-  body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+    /* Style the navbar */
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
 
-.containerwa {
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
-}
+    /* Style the logo */
+    .logo {
+      font-size: 24px;
+    }
 
-h1 {
-  color: #333;
-}
+    /* Style the menu items */
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-p {
-  color: #666;
-  margin-bottom: 20px;
-}
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
 
-.whatsapp-button {
-  display: inline-block;
-  background-color: #25D366;
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 15px 30px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+    /* Style the active link */
+    .menu a.active {
+      font-weight: bold;
+    }
 
-.whatsapp-button:hover {
-  background-color: #128C7E;
-}
+    /* Style the dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
+    /* Style the dropdown button */
+    .dropbtn {
+      background-color: inherit;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    /* Style the dropdown links */
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #555;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Media query for mobile layout */
+    @media only screen and (max-width: 600px) {
+      .menu {
+        display: none;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+      }
+
+      .navbar:hover .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu a {
+        margin: 0;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="containerwa">
-    <h1>Kontak Kami</h1>
-    <p>Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami melalui WhatsApp.</p>
-    <a href="https://wa.me/6281234567890" class="whatsapp-button" target="_blank">Hubungi Kami di WhatsApp</a>
-  </div>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <div class="menu">
+      <a href="#" class="active">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 </body>
 </html>

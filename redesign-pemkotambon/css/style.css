@@ -192,6 +192,7 @@
         border: 0;
         transition: .5s;
         opacity: 0;
+        right:
     }
 }
 
@@ -222,7 +223,7 @@
 }
 /*** Navbar End ***/
 
-* Mobile Navigation 
+/* Mobile Navigation 
 */
 .mobile-nav-toggle {
   color: #58716d;
@@ -267,7 +268,7 @@
 
 .navbar-mobile ul {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 55px;
   right: 15px;
   bottom: 15px;
